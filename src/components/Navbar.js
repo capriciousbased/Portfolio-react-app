@@ -14,12 +14,12 @@ const Navbar = () => {
       </div>
       {/* menu */}
 
-      <ul className="hidden md:flex">
-        <li>Home</li>
-        <li>About</li>
-        <li>Skills</li>
-        <li>Works</li>
-        <li>Contacts</li>
+      <ul className="hidden md:flex rounded">
+        <li className=" hover:bg-blue-400 transition-all rounded">Home</li>
+        <li className=" hover:bg-blue-400 transition-all rounded">About</li>
+        <li className=" hover:bg-blue-400 transition-all rounded">Skills</li>
+        <li className=" hover:bg-blue-400 transition-all rounded">Works</li>
+        <li className=" hover:bg-blue-400 transition-all rounded">Contacts</li>
       </ul>
       {/* Hamburger */}
       <div onClick={handleClick} className="md:hidden z-10">
@@ -34,11 +34,21 @@ const Navbar = () => {
             : "absolute top-0 left-0 w-full h-screen bg-[#0a192f] flex flex-col justify-center items-center"
         }
       >
-        <li className="py-6 text-4xl">Home</li>
-        <li className="py-6 text-4xl">About</li>
-        <li className="py-6 text-4xl">Skills</li>
-        <li className="py-6 text-4xl">Works</li>
-        <li className="py-6 text-4xl">Contacts</li>
+        <li className="py-6 text-4xl  hover:bg-blue-400 transition-all rounded">
+          Home
+        </li>
+        <li className="py-6 text-4xl  hover:bg-blue-400 transition-all rounded">
+          About
+        </li>
+        <li className="py-6 text-4xl  hover:bg-blue-400 transition-all rounded">
+          Skills
+        </li>
+        <li className="py-6 text-4xl  hover:bg-blue-400 transition-all rounded">
+          Works
+        </li>
+        <li className="py-6 text-4xl  hover:bg-blue-400 transition-all rounded">
+          Contacts
+        </li>
       </ul>
       {/* Social icons */}
       <div className="hidden lg:flex fixed flex-col top-[35%] left-0">
