@@ -18,7 +18,7 @@ const Navbar = () => {
         <li className=" hover:bg-blue-400 transition-all rounded">Home</li>
         <li className=" hover:bg-blue-400 transition-all rounded">About</li>
         <li className=" hover:bg-blue-400 transition-all rounded">Skills</li>
-        <li className=" hover:bg-blue-400 transition-all rounded">Works</li>
+        <li className=" hover:bg-blue-400 transition-all rounded">Projects</li>
         <li className=" hover:bg-blue-400 transition-all rounded">Contacts</li>
       </ul>
       {/* Hamburger */}
@@ -44,7 +44,7 @@ const Navbar = () => {
           Skills
         </li>
         <li className="py-6 text-4xl  hover:bg-blue-400 transition-all rounded">
-          Works
+          Projects
         </li>
         <li className="py-6 text-4xl  hover:bg-blue-400 transition-all rounded">
           Contacts
