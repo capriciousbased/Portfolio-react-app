@@ -3,6 +3,7 @@ import { FaBars, FaTimes, FaGithub, FaLinkedin } from "react-icons/fa";
 import Logo from "../assets/logo.png";
 import { HiOutlineMail } from "react-icons/hi";
 import { BsFillPersonLinesFill } from "react-icons/bs";
+import { Link } from "react-scroll";
 const Navbar = () => {
   const [nav, setNav] = useState(false);
   const handleClick = () => setNav(!nav);
@@ -15,11 +16,31 @@ const Navbar = () => {
       {/* menu */}
 
       <ul className="hidden md:flex rounded">
-        <li className=" hover:bg-blue-400 transition-all rounded">Home</li>
-        <li className=" hover:bg-blue-400 transition-all rounded">About</li>
-        <li className=" hover:bg-blue-400 transition-all rounded">Skills</li>
-        <li className=" hover:bg-blue-400 transition-all rounded">Projects</li>
-        <li className=" hover:bg-blue-400 transition-all rounded">Contacts</li>
+        <li className=" hover:bg-blue-400 transition-all rounded">
+          <Link to="home" smooth={true} duration={500}>
+            Home
+          </Link>
+        </li>
+        <li className=" hover:bg-blue-400 transition-all rounded">
+          <Link to="about" smooth={true} duration={500}>
+            About
+          </Link>
+        </li>
+        <li className=" hover:bg-blue-400 transition-all rounded">
+          <Link to="skills" smooth={true} duration={500}>
+            Skills
+          </Link>
+        </li>
+        <li className=" hover:bg-blue-400 transition-all rounded">
+          <Link to="projects" smooth={true} duration={500}>
+            Projects
+          </Link>
+        </li>
+        <li className=" hover:bg-blue-400 transition-all rounded">
+          <Link to="contact" smooth={true} duration={500}>
+            Contact
+          </Link>
+        </li>
       </ul>
       {/* Hamburger */}
       <div onClick={handleClick} className="md:hidden z-10">
@@ -35,19 +56,34 @@ const Navbar = () => {
         }
       >
         <li className="py-6 text-4xl  hover:bg-blue-400 transition-all rounded">
-          Home
+          <Link onClick={handleClick} to="home" smooth={true} duration={500}>
+            Home
+          </Link>
         </li>
         <li className="py-6 text-4xl  hover:bg-blue-400 transition-all rounded">
-          About
+          <Link onClick={handleClick} to="about" smooth={true} duration={500}>
+            About
+          </Link>
         </li>
         <li className="py-6 text-4xl  hover:bg-blue-400 transition-all rounded">
-          Skills
+          <Link onClick={handleClick} to="skills" smooth={true} duration={500}>
+            Skills
+          </Link>
         </li>
         <li className="py-6 text-4xl  hover:bg-blue-400 transition-all rounded">
-          Projects
+          <Link
+            onClick={handleClick}
+            to="projects"
+            smooth={true}
+            duration={500}
+          >
+            Projects
+          </Link>
         </li>
         <li className="py-6 text-4xl  hover:bg-blue-400 transition-all rounded">
-          Contacts
+          <Link onClick={handleClick} to="contact" smooth={true} duration={500}>
+            Contact
+          </Link>
         </li>
       </ul>
       {/* Social icons */}
